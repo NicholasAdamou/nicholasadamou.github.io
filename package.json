@@ -14,13 +14,19 @@
     "@testing-library/user-event": "10.3.5",
     "netlify": "4.1.7",
     "netlify-lambda": "1.6.3",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "postcss-cli": "^7.1.2",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-import": "^12.0.1",
+    "postcss-normalize": "^9.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "snowpack dev --config snowpack.config.js",
+    "start:cra": "react-scripts start",
     "build": "react-scripts build && echo '/* /index.html 200' | cat > build/_redirects",
     "eject": "react-scripts eject",
     "test": "react-scripts test",
@@ -46,6 +52,9 @@
   },
   "devDependencies": {
     "@material-ui/core": "^4.11.0",
+    "@snowpack/app-scripts-react": "^1.12.5",
+    "@snowpack/plugin-dotenv": "^2.0.5",
+    "@snowpack/plugin-react-refresh": "^2.4.0",
     "bulma": "0.8.2",
     "carbon-components": "10.12.0",
     "carbon-components-react": "7.12.0",
@@ -53,6 +62,7 @@
     "moment": "2.26.0",
     "node-sass": "4.14.1",
     "react-helmet": "6.0.0",
+    "snowpack": "^2.15.1",
     "styled-components": "5.1.1"
   }
 }
